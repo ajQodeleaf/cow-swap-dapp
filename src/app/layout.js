@@ -7,7 +7,10 @@ export default function RootLayout({ children }) {
   return (
     <WalletProvider>
       <DAppProvider config={config}>
-        <html lang="en">
+        <html lang="en" style={{ zoom: "100%" }}>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=0.67" />
+          </head>
           <body
             style={{
               overflow: "hidden",
