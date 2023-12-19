@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
       <DAppProvider config={config}>
         <html lang="en" style={{ zoom: "67%" }}>
         <head>
-            <meta name="viewport" content="width=device-width, initial-scale=0.67" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
           </head>
           <body
             style={{
