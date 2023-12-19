@@ -100,7 +100,6 @@ function PageHeader({ pageTitle }) {
     const chain = selectedChain;
     try {
       const selectedChain = event.target.value;
-      console.log("Selected Chain = ", selectedChain);
 
       setSelectedChain(selectedChain);
 
@@ -129,7 +128,7 @@ function PageHeader({ pageTitle }) {
     <Grid
       container
       style={{
-        height: "16vh",
+        height: "20vh",
         alignItems: "center",
         display: "flex",
         justifyContent: "space-between",
@@ -142,7 +141,6 @@ function PageHeader({ pageTitle }) {
         item
         xs={6}
         style={{
-          height: "20vh",
           alignItems: "center",
           display: "flex",
           justifyContent: "space-between",
@@ -210,7 +208,7 @@ function PageHeader({ pageTitle }) {
         <Button
           variant="elevated"
           marginLeft="20px"
-          style={{backgroundColor:"red"}}
+          style={{ backgroundColor: "red" }}
           onClick={() => {
             deactivate();
             router.push("/");

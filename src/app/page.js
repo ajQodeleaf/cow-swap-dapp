@@ -3,6 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import { useEthers, Goerli, Mainnet } from "@usedapp/core";
 import Button from "@mui/material-next/Button";
+import { Typography } from "@mui/material";
 import { useWalletProvider } from "../../src/context/WalletContext";
 
 const ConnectWallet = () => {
@@ -32,7 +33,6 @@ const ConnectWallet = () => {
     activateBrowserWallet();
   };
 
-
   return (
     <div
       style={{
@@ -44,8 +44,20 @@ const ConnectWallet = () => {
       }}
     >
       <div>
-        <Button onClick={handleConnectWallet} className="btn">
-          Connect Wallet
+        <Button
+          onClick={handleConnectWallet}
+          size="large"
+          style={{
+            backgroundColor: "#705402",
+            width: "100%",
+            color: "white",
+            height: "100%",
+            borderRadius: "40px",
+          }}
+        >
+          <Typography variant="h6" fontWeight="bold" color="white">
+            CONNECT WALLET
+          </Typography>
         </Button>
       </div>
     </div>

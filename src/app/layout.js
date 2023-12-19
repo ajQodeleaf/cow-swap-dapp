@@ -10,7 +10,10 @@ export default function RootLayout({ children }) {
         <html lang="en">
           <body
             style={{
-              marginLeft: "20px",
+              overflow: "hidden",
+              transform: "scale(1.0)",
+              transformOrigin: "top left",
+              marginLeft: "40px",
               marginRight: "40px",
               backgroundImage:
                 "linear-gradient(rgb(255, 255, 255),rgb(255, 244, 212))",
